@@ -1,0 +1,107 @@
+<div class="w-screen bg-black h-screen" id="home">
+  <div class="content-center text-white space-y-4 w-full h-full">
+    <h1 class="text-7xl text-center">ELEGANT PORTRAIT PHOTOGRAPHY</h1>
+    <h2 class="text-center text-2xl">
+      What we create is a snapshot of a moment in time. The closest thing to
+      forever.
+    </h2>
+  </div>
+
+  <!-- ON-LOCATION PHOTOGRAPHY -->
+
+  <div class="bg-yellow w-full h-auto">
+    <div class="px-10 py-20 flex gap-90 justify-center">
+      <div class="bg-black w-72 h-90"><img src="" alt="" /></div>
+      <div class="space-y-2 content-center">
+        <h1 class="text-4xl">ON-LOCATION PORTRAITS</h1>
+        <h1 class="w-90">
+          Every great moment we experience deserves to be preserved, the best
+          way is through portraits.
+        </h1>
+        <button class="h-10 w-auto px-4 bg-black text-white">
+          VIEW PACKAGES
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- EVENT PHOTOGRAPHY -->
+
+  <div class="bg-gray-100 w-full h-auto">
+    <div class="px-10 py-20 flex gap-90 justify-center">
+      <div class="space-y-2 content-center">
+        <h1 class="text-4xl">EVENT PHOTOGRAPHY</h1>
+        <h1 class="w-90">
+          Every great moment we experience deserves to be preserved, the best
+          way is through portraits.
+        </h1>
+        <button class="h-10 w-auto px-4 bg-black text-white">
+          VIEW PACKAGES
+        </button>
+      </div>
+
+      <div class="bg-black w-72 h-90"><img src="" alt="" /></div>
+    </div>
+  </div>
+
+  <!-- TESTIMONIAL SECTION -->
+
+  <div class="bg-black w-full h-screen content-center">
+    <div class="max-w-6xl mx-auto p-6">
+      <div class="bg-black overflow-hidden flex flex-col md:flex-row">
+        <!-- Left Section - Image -->
+        <div class="md:w-1/2 flex items-center justify-center bg-gray-100">
+          <img
+            [src]="testimonials[currentIndex].image"
+            alt="Client Image"
+            class="w-full h-full object-cover transition duration-500"
+          />
+        </div>
+
+        <!-- Right Section - Content -->
+        <div class="md:w-1/2 p-6 flex flex-col justify-between">
+          <div>
+            <h1 class="text-white text-2xl">TESTIMONIALS</h1>
+            <h2 class="text-xl font-semibold text-white mb-2">
+              {{ testimonials[currentIndex].name }}
+            </h2>
+            <p class="text-white text-sm md:text-base">
+              "{{ testimonials[currentIndex].description }}"
+            </p>
+          </div>
+
+          <!-- Slider Controls -->
+          <div class="mt-6 flex items-center justify-between">
+            <div class="space-x-2">
+              <button
+                (click)="prev()"
+                class="px-3 py-1 bg-gray-200 hover:bg-gray-300 rounded-full text-sm"
+              >
+                ‹
+              </button>
+              <button
+                (click)="next()"
+                class="px-3 py-1 bg-gray-200 hover:bg-gray-300 rounded-full text-sm"
+              >
+                ›
+              </button>
+            </div>
+
+            <!-- Pagination Dots -->
+            <div class="flex space-x-1">
+              <span
+                *ngFor="let item of testimonials; let idx = index"
+                (click)="setIndex(idx)"
+                class="w-3 h-3 rounded-full cursor-pointer"
+                [ngClass]="{
+                  'bg-blue-500': idx === currentIndex,
+                  'bg-gray-300': idx !== currentIndex
+                }"
+              ></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
