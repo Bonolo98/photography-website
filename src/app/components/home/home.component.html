@@ -1,7 +1,15 @@
 <div class="w-screen bg-black h-screen" id="home">
-  <div class="content-center text-white space-y-4 w-full h-full">
-    <h1 class="text-7xl text-center">ELEGANT PORTRAIT PHOTOGRAPHY</h1>
-    <h2 class="text-center text-2xl">
+  <div
+    class="flex flex-col items-center justify-center text-white px-4 py-20 w-full h-full space-y-6 bg-black"
+  >
+    <h1
+      class="text-3xl sm:text-4xl md:text-6xl lg:text-7xl text-center font-bold"
+    >
+      ELEGANT PORTRAIT PHOTOGRAPHY
+    </h1>
+    <h2
+      class="text-base sm:text-lg md:text-xl lg:text-2xl text-center max-w-3xl"
+    >
       What we create is a snapshot of a moment in time. The closest thing to
       forever.
     </h2>
@@ -9,16 +17,29 @@
 
   <!-- ON-LOCATION PHOTOGRAPHY -->
 
-  <div class="bg-yellow w-full h-auto">
-    <div class="px-10 py-20 flex gap-90 justify-center">
-      <div class="bg-black w-72 h-90"><img src="" alt="" /></div>
-      <div class="space-y-2 content-center">
-        <h1 class="text-4xl">ON-LOCATION PORTRAITS</h1>
-        <h1 class="w-90">
-          Every great moment we experience deserves to be preserved, the best
-          way is through portraits.
+  <div class="bg-yellow-200 w-full">
+    <div
+      class="flex flex-col md:flex-row items-center justify-center gap-40 px-6 md:px-10 py-20"
+    >
+      <!-- Image Section -->
+      <div
+        class="bg-black w-64 h-64 md:w-72 md:h-90 flex items-center justify-center"
+      >
+        <img src="" alt="Portrait sample" class="object-cover w-full h-full" />
+      </div>
+
+      <!-- Text Section -->
+      <div class="text-center md:text-left space-y-4 max-w-lg">
+        <h1 class="text-3xl md:text-4xl font-bold text-black">
+          ON-LOCATION PORTRAITS
         </h1>
-        <button class="h-10 w-auto px-4 bg-black text-white">
+        <p class="text-base md:text-lg text-gray-800">
+          Every great moment we experience deserves to be preserved — the best
+          way is through portraits.
+        </p>
+        <button
+          class="h-10 px-6 bg-black text-white text-sm hover:bg-gray-900 transition"
+        >
           VIEW PACKAGES
         </button>
       </div>
@@ -27,20 +48,36 @@
 
   <!-- EVENT PHOTOGRAPHY -->
 
-  <div class="bg-gray-100 w-full h-auto">
-    <div class="px-10 py-20 flex gap-90 justify-center">
-      <div class="space-y-2 content-center">
-        <h1 class="text-4xl">EVENT PHOTOGRAPHY</h1>
-        <h1 class="w-90">
-          Every great moment we experience deserves to be preserved, the best
-          way is through portraits.
+  <div class="bg-gray-100 w-full">
+    <div
+      class="flex flex-col md:flex-row items-center justify-center gap-40 px-6 md:px-10 py-20"
+    >
+      <!-- Text Section -->
+      <div class="text-center md:text-left space-y-4 max-w-lg">
+        <h1 class="text-3xl md:text-4xl font-bold text-black">
+          EVENT PHOTOGRAPHY
         </h1>
-        <button class="h-10 w-auto px-4 bg-black text-white">
+        <p class="text-base md:text-lg text-gray-700">
+          Every great moment we experience deserves to be preserved — the best
+          way is through portraits.
+        </p>
+        <button
+          class="h-10 px-6 bg-black text-white text-sm hover:bg-gray-900 transition"
+        >
           VIEW PACKAGES
         </button>
       </div>
 
-      <div class="bg-black w-72 h-90"><img src="" alt="" /></div>
+      <!-- Image Section -->
+      <div
+        class="bg-black w-64 h-64 md:w-72 md:h-90 flex items-center justify-center"
+      >
+        <img
+          src=""
+          alt="Event photography"
+          class="object-cover w-full h-full"
+        />
+      </div>
     </div>
   </div>
 
