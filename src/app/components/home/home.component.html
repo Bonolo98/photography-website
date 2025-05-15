@@ -1,6 +1,11 @@
 <div class="w-screen bg-black h-screen" id="home">
   <div
     class="flex flex-col items-center justify-center text-white px-4 py-20 w-full h-full space-y-6 bg-black"
+    style="
+      background-image: url(/public/raymondperez.jpg);
+      width: 100vw;
+      height: 100vh;
+    "
   >
     <h1
       class="text-3xl sm:text-4xl md:text-6xl lg:text-7xl text-center font-bold"
@@ -23,7 +28,7 @@
     >
       <!-- Image Section -->
       <div
-        class="bg-black w-64 h-64 md:w-72 md:h-90 flex items-center justify-center"
+        class="bg-black w-64 h-64 md:w-72 md:h-90 flex items-center justify-center transition duration-300 hover:scale-110"
       >
         <img src="" alt="Portrait sample" class="object-cover w-full h-full" />
       </div>
@@ -70,7 +75,7 @@
 
       <!-- Image Section -->
       <div
-        class="bg-black w-64 h-64 md:w-72 md:h-90 flex items-center justify-center"
+        class="bg-black w-64 h-64 md:w-72 md:h-90 flex items-center justify-center transition duration-300 hover:scale-110"
       >
         <img
           src=""
@@ -98,7 +103,9 @@
         <!-- Right Section - Content -->
         <div class="md:w-1/2 p-6 flex flex-col justify-between">
           <div>
-            <h1 class="text-white text-2xl">TESTIMONIALS</h1>
+            <h1 class="text-white text-2xl font-bold text-yellow-400">
+              TESTIMONIALS
+            </h1>
             <h2 class="text-xl font-semibold text-white mb-2">
               {{ testimonials[currentIndex].name }}
             </h2>
