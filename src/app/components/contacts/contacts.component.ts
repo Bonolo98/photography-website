@@ -34,7 +34,7 @@ export class ContactsComponent {
   onSubmit(): void {
     if (this.contactForm.invalid) return;
 
-    const formUrl = 'https://formspree.io/f/mjkypyyy'; // replace with your actual Formspree form ID
+    const formUrl = 'https://formspree.io/f/mjkypyyy';
 
     this.http.post(formUrl, this.contactForm.value).subscribe({
       next: () => {

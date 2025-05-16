@@ -1,65 +1,3 @@
-<!-- <div class="w-screen fixed">
-  <div class="grid grid-cols-12 navbar bg-black w-full h-32 p-10">
-    <div class="col-span-4 text-white flex items-center">
-      <div>
-        <h1 class="text-3xl">
-          ETHERSCXPE <span style="font-weight: lighter">| PHOTOGRAPHY</span>
-        </h1>
-        <p class="text-sm">SIMPLE & ELEGANT PHOTOGRAPHY</p>
-      </div>
-    </div>
-    <div class="col-span-8 text-white text-end flex items-center">
-      <div class="space-x-16">
-        <button
-          class="text-sm md:text-xl transform hover:text-gray transition duration-500 hover:scale-125 hover:text-gray"
-          routerLink="/home"
-        >
-          HOME
-        </button>
-        <button
-          class="text-sm md:text-xl transform hover:text-gray transition duration-500 hover:scale-125 hover:text-gray"
-          routerLink="/packages"
-        >
-          PACKAGES
-        </button>
-        <button
-          class="text-sm md:text-xl transform hover:text-gray transition duration-500 hover:scale-125 hover:text-gray"
-          routerLink="/portfolio"
-        >
-          PORTFOLIO
-        </button>
-        <button
-          class="text-sm md:text-xl transform hover:text-gray transition duration-500 hover:scale-125 hover:text-gray"
-          routerLink="/about"
-        >
-          ABOUT
-        </button>
-        <button
-          class="text-sm md:text-xl transform hover:text-gray transition duration-500 hover:scale-125 hover:text-gray"
-          routerLink="/policy"
-        >
-          BOOKING POLICY
-        </button>
-
-        <button
-          class="text-sm md:text-xl transform hover:text-gray transition duration-500 hover:scale-125 hover:text-gray"
-          routerLink="/faq"
-        >
-          FAQ
-        </button>
-        <button
-          class="text-sm md:text-xl transform hover:text-gray transition duration-500 hover:scale-125 hover:text-gray"
-          routerLink="/contacts"
-        >
-          CONTACTS
-        </button>
-      </div>
-    </div>
-  </div>
-</div> -->
-
-
-
 <!-- navbar.component.html -->
 <div class="w-screen fixed top-0 z-50 bg-black">
   <div class="flex items-center justify-between px-6 py-6 md:py-10">
@@ -73,7 +11,10 @@
 
     <!-- Hamburger Icon (Mobile only) -->
     <div class="md:hidden">
-      <button (click)="isMenuOpen = !isMenuOpen" class="text-white focus:outline-none">
+      <button
+        (click)="isMenuOpen = !isMenuOpen"
+        class="text-white focus:outline-none"
+      >
         <svg
           *ngIf="!isMenuOpen"
           xmlns="http://www.w3.org/2000/svg"
@@ -82,8 +23,12 @@
           viewBox="0 0 24 24"
           stroke="currentColor"
         >
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M4 6h16M4 12h16M4 18h16" />
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
         </svg>
 
         <svg
@@ -94,8 +39,12 @@
           viewBox="0 0 24 24"
           stroke="currentColor"
         >
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M6 18L18 6M6 6l12 12" />
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"
+          />
         </svg>
       </button>
     </div>
@@ -114,7 +63,10 @@
   </div>
 
   <!-- Mobile Menu -->
-  <div *ngIf="isMenuOpen" class="md:hidden px-6 pb-4 bg-black text-white space-y-3">
+  <div
+    *ngIf="isMenuOpen"
+    class="md:hidden px-6 pb-4 bg-black text-white space-y-3"
+  >
     <ng-container *ngFor="let link of navLinks">
       <button
         [routerLink]="link.path"
