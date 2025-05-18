@@ -20,7 +20,7 @@ export class HomeComponent {
       name: 'Sarah Johnson',
       description:
         'Working with this team was a game changer for our business.',
-      image: 'https://i.pravatar.cc/150?img=32',
+      image: 'DSC_0525-2.jpg',
     },
     {
       name: 'David Smith',

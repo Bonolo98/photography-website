@@ -27,11 +27,11 @@
   <!-- Tab Content -->
   <div class="py-4">
     <div *ngIf="activeTab === 'portraits'" class="p-4 flex justify-center">
-      <div class="" *ngFor="let image of images">
+      <div class="" *ngFor="let portrait of portraits">
         <div
           class="w-80 h-92 text-white transition duration-300 hover:scale-110"
         >
-          <img class=" " [src]="image.imgUrl" alt="" />
+          <img class=" " [src]="portrait.imgUrl" alt="" />
           <!-- <h2 class="text-xl font-bold mb-4">Portraits Content</h2>
             <p>This is where your portraits content would go.</p> -->
         </div>
@@ -39,11 +39,11 @@
     </div>
 
     <div *ngIf="activeTab === 'events'" class="p-4 flex justify-center">
-      <div class="" *ngFor="let image of images">
+      <div class="" *ngFor="let event of events">
         <div
           class="w-80 h-92 text-white transition duration-300 hover:scale-110"
         >
-          <img class=" " [src]="image.imgUrl" alt="" />
+          <img class=" " [src]="event.imgUrl" alt="" />
           <!-- <h2 class="text-xl font-bold mb-4">Portraits Content</h2>
                 <p>This is where your portraits content would go.</p> -->
         </div>
