@@ -1,5 +1,5 @@
 <!-- tabs.component.html -->
-<div class="max-w-7xl mx-auto px-4 ">
+<div class="max-w-7xl mx-auto px-4">
   <!-- Tab Buttons -->
   <div class="flex border-gray-200 justify-center md:mt-40">
     <button
@@ -31,7 +31,11 @@
         <div
           class="w-80 h-92 text-white transition duration-300 hover:scale-110"
         >
-          <img class=" " [src]="portrait.imgUrl" alt="" />
+          <img
+            class="w-80 h-[45vh] bg-contain"
+            [src]="portrait.imgUrl"
+            alt=""
+          />
           <!-- <h2 class="text-xl font-bold mb-4">Portraits Content</h2>
             <p>This is where your portraits content would go.</p> -->
         </div>
@@ -43,7 +47,7 @@
         <div
           class="w-80 h-92 text-white transition duration-300 hover:scale-110"
         >
-          <img class=" " [src]="event.imgUrl" alt="" />
+          <img class="w-80 h-[45vh] bg-contain" [src]="event.imgUrl" alt="" />
           <!-- <h2 class="text-xl font-bold mb-4">Portraits Content</h2>
                 <p>This is where your portraits content would go.</p> -->
         </div>

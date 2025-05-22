@@ -133,7 +133,7 @@ export class PackagesComponent {
       // await this.sendWhatsAppMessage();
 
       this.submissionSuccess = true;
-      setTimeout(() => this.closeModal(), 3000);
+      setTimeout(() => this.closeModal(), 5000);
     } catch (error) {
       console.error('Booking submission error:', error);
       this.submissionError =
