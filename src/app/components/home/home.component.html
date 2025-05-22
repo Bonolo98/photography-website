@@ -45,6 +45,7 @@
         </p>
         <button
           class="h-10 px-6 bg-black text-white text-sm hover:bg-gray-900 transition"
+          routerLink="/packages"
         >
           VIEW PACKAGES
         </button>
@@ -69,6 +70,7 @@
         </p>
         <button
           class="h-10 px-6 bg-black text-white text-sm hover:bg-gray-900 transition"
+          routerLink="/packages"
         >
           VIEW PACKAGES
         </button>
@@ -122,15 +124,26 @@
             <div class="space-x-2">
               <button
                 (click)="prev()"
-                class="px-3 py-1 bg-gray-200 hover:bg-gray-300 rounded-full text-sm"
+                class="px-3 py-1 hover:bg-gray-300 rounded-full text-sm"
               >
-                ‹
+                <img
+                  class="transform scale-x-[-1]"
+                  width="50"
+                  height="50"
+                  src="https://img.icons8.com/ios-filled/50/FFFFFF/arrow.png"
+                  alt="arrow"
+                />
               </button>
               <button
                 (click)="next()"
-                class="px-3 py-1 bg-gray-200 hover:bg-gray-300 rounded-full text-sm"
+                class="px-3 py-1 hover:bg-gray-300 rounded-full text-sm"
               >
-                ›
+                <img
+                  width="50"
+                  height="50"
+                  src="https://img.icons8.com/ios-filled/50/FFFFFF/arrow.png"
+                  alt="arrow"
+                />
               </button>
             </div>
 
