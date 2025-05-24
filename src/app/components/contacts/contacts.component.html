@@ -16,9 +16,9 @@
           <button
             type="button"
             (click)="toggleDropdown()"
-            class="w-full p-2 border border-black bg-white text-left shadow-sm focus:outline-none"
+            class="w-full p-2 border border-black bg-white text-left shadow-sm focus:outline-none font-bold"
           >
-            {{ selectedSubject || "Select a subject" }}
+            {{ selectedSubject || "SELECT A SUBJECT" }}
           </button>
 
           <ul
@@ -57,7 +57,9 @@
     </div>
 
     <div>
-      <label class="block mb-1 text-sm font-medium text-gray-700">Name</label>
+      <label class="block mb-1 text-sm font-medium text-gray-700"
+        >Full Name</label
+      >
       <input
         type="text"
         formControlName="name"
@@ -87,7 +89,7 @@
 
     <div>
       <label class="block mb-1 text-sm font-medium text-gray-700"
-        >Message</label
+        >Message <span class="text-yellow-600">How can we help?</span></label
       >
       <textarea
         formControlName="message"
