@@ -21,6 +21,10 @@ export class ContactsComponent {
   isSuccess = false;
   isError = false;
 
+  dropdownOpen = false;
+  selectedOption: string = '';
+  subjects: string[] = ['ENQUIRIES', 'BOOKINGS '];
+
   constructor(private fb: FormBuilder, private http: HttpClient) {
     this.contactForm = this.fb.group({
       name: ['', Validators.required],
@@ -29,6 +33,19 @@ export class ContactsComponent {
       subject: ['', Validators.required],
       phone: ['', Validators.required],
     });
+  }
+
+  toggleDropdown() {
+    this.dropdownOpen = !this.dropdownOpen;
+  }
+
+  selectSubject(subject: string) {
+    this.contactForm.get('subject')?.setValue(subject);
+    this.dropdownOpen = false;
+  }
+
+  get selectedSubject() {
+    return this.contactForm.get('subject')?.value;
   }
 
   onSubmit(): void {
