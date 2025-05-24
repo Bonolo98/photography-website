@@ -52,8 +52,8 @@ export class PackagesComponent {
 
   packages: { [key: string]: any } = {
     'standard-portrait': {
-      title: 'STANDARD PORTRAIT PACKAGE',
-      price: 'R600',
+      title: 'BEGINNER PACKAGE',
+      price: 'R500',
       details: [
         '1 HOUR PHOTOSHOOT',
         '30 EDITED IMAGES',
@@ -63,8 +63,8 @@ export class PackagesComponent {
     },
     // Add other packages similarly
     'standard-event': {
-      title: 'STANDARD EVENT PACKAGE',
-      price: 'R1200',
+      title: 'BRONZE PACKAGE',
+      price: 'R1400',
       details: [
         '2 HOUR PHOTOSHOOT',
         '50 EDITED IMAGES',

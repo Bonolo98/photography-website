@@ -3,7 +3,7 @@
     class="flex flex-col items-center justify-center text-white px-4 py-20 w-full h-full space-y-6 bg-black bg-cover bg-center md:bg-cover"
     style="background-image: url('DSC_0019.jpg')"
   >
-    <div class="absolute w-screen h-[103vh] bg-black opacity-25"></div>
+    <div class="absolute w-screen h-[103vh] bg-black opacity-30"></div>
     <div class="absolute starfall">
       <div class="falling-star"></div>
       <div class="falling-star"></div>
@@ -48,12 +48,12 @@
     </div>
 
     <h1
-      class="overflow-visibletext-3xl sm:text-4xl md:text-6xl lg:text-7xl text-center font-lora"
+      class="overflow-visible text-3xl sm:text-4xl md:text-6xl lg:text-7xl text-center font-lora relative"
     >
       ELEGANT PORTRAIT PHOTOGRAPHY
     </h1>
     <h2
-      class="text-base sm:text-lg md:text-xl lg:text-2xl text-center max-w-3xl"
+      class="text-base sm:text-lg md:text-xl lg:text-2xl text-center max-w-3xl relative"
     >
       What we create is a snapshot of a moment in time. The closest thing to
       forever.
@@ -64,11 +64,11 @@
 
   <div class="bg-yellow-100 w-full">
     <div
-      class="flex flex-col md:flex-row items-center justify-center gap-40 px-6 md:px-10 py-20"
+      class="flex flex-col md:flex-row items-center justify-center gap-16 md:gap-40 px-6 md:px-10 py-20"
     >
       <!-- Image Section -->
       <div
-        class="bg-black w-64 h-64 md:w-90 md:h-full flex items-center justify-center transition duration-300 hover:scale-110"
+        class="bg-black w-64 h-80 md:w-90 md:h-full flex items-center justify-center transition duration-300 hover:scale-110"
       >
         <img
           src="DSC_0280-2.jpg"
@@ -86,12 +86,14 @@
           Every great moment we experience deserves to be preserved — the best
           way is through portraits.
         </p>
-        <button
-          class="h-10 px-6 bg-black text-white text-sm hover:bg-gray-900 transition holographic-card"
-          routerLink="/packages"
-        >
-          VIEW PACKAGES
-        </button>
+        <div class="flex justify-center">
+          <button
+            class="h-10 px-6 bg-black text-white text-sm hover:bg-gray-900 transition holographic-card"
+            routerLink="/packages"
+          >
+            VIEW PACKAGES
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -111,12 +113,14 @@
           Every great moment we experience deserves to be preserved — the best
           way is through portraits.
         </p>
-        <button
-          class="h-10 px-6 bg-black text-white text-sm hover:bg-gray-900 transition holographic-card"
-          routerLink="/packages"
-        >
-          VIEW PACKAGES
-        </button>
+        <div class="flex justify-center">
+          <button
+            class="h-10 px-6 bg-black text-white text-sm hover:bg-gray-900 transition holographic-card"
+            routerLink="/packages"
+          >
+            VIEW PACKAGES
+          </button>
+        </div>
       </div>
 
       <!-- Image Section -->
