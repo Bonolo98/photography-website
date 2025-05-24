@@ -59,6 +59,26 @@ export class PortfolioComponent {
       imgUrl: 'DSC_0552.jpg',
       description: '',
     },
+    {
+      id: 5,
+      imgUrl: 'DSC_0552.jpg',
+      description: '',
+    },
+    {
+      id: 6,
+      imgUrl: 'DSC_0552.jpg',
+      description: '',
+    },
+    {
+      id: 7,
+      imgUrl: 'DSC_0552.jpg',
+      description: '',
+    },
+    {
+      id: 8,
+      imgUrl: 'DSC_0552.jpg',
+      description: '',
+    },
   ];
 
   setActiveTab(tab: string) {
