@@ -28,14 +28,14 @@
   <div class="py-4">
     <div
       *ngIf="activeTab === 'portraits'"
-      class="flex justify-center grid grid-cols-3 grid-rows-2"
+      class="flex justify-center grid grid-cols-3 grid-rows-2 gap-y-16"
     >
       <div class="" *ngFor="let portrait of portraits">
         <div
-          class="w-80 h-92 text-white transition duration-300 hover:scale-110 col-span-2"
+          class="w-full h-92 text-white transition duration-300 hover:scale-110 col-span-2"
         >
           <img
-            class="w-80 h-[45vh] bg-contain"
+            class="w-80 h-[45vh] bg-fit"
             [src]="portrait.imgUrl"
             alt=""
           />
